@@ -1,4 +1,27 @@
+* {
+    font-size: 1.25rem;
+}
+
+body {
+    background-color: blanchedalmond;
+}
+
+ul {
+    display: flex;
+    flex-direction: row wrap;
+}
+
+input,
+select {
+    background-color: blanchedalmond;
+}
+
 fieldset {
     display: flex;
     flex-direction: column;
+    font-family: 'Thasadith', sans-serif;
+}
+
+.formHeader {
+    font-family: 'Staatliches', cursive;
 }
