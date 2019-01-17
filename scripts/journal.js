@@ -1,22 +1,16 @@
-const dailyJournal = [
-    {
-        date: "",
-        concept: "",
-        entry: "",
-        mood: "",
-    }
-]
-
 // IS BASIC
-// const makeJournalEntryComponent = (...args) => {
-//     return `
-//         <div id="entry">
-//             ${journalRestBuilder(date)}
-//             ${journalRestBuilder(concept)}
-//             ${journalRestBuilder(entry)}
-//             ${journalRestBuilder(mood)}
-//     `
-// }
+let makeJournalEntryComponent = (date, concept, entry, mood) => {
+    return `
+        <div id="entry">
+            ${journalRestBuilder(date)}
+            ${journalRestBuilder(concept)}
+            ${journalRestBuilder(entry)}
+            ${journalRestBuilder(mood)}
+        </div>
+    `
+}
+
+
 
 // IS COOL PART 1
 // const journalRestBuilder = (...args) => {
@@ -63,9 +57,10 @@ const dailyJournal = [
 // document.querySelector(".container").appendChild(fragment)
 
 //does the button use 'document.querySelector' to populate
+const journalContainer = document.querySelector("#container")
 const journalButton = document.querySelector("#journalButton")
 journalButton.addEventListener("click", (event) => {
-    window.alert("you added a button!")
+    makeJournalEntryComponent += journalContainer.innerHTML
 })
 
 
