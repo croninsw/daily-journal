@@ -6,9 +6,21 @@ body {
     background-color: rgb(255, 252, 248);
 }
 
+header {
+    border: solid 1px red;
+}
+
 ul {
+    display: inline-flex;
+    list-style-type: none;
+    float: right;
+    border: 1px solid red;
+}
+
+li {
     display: flex;
-    flex-direction: row wrap;
+    float: right;
+    border: 1px solid red;
 }
 
 input,
