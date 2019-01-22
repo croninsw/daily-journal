@@ -1,2 +1,6 @@
-fetch("http://localhost:3000/entries")
-    .then(response => response.json())
+const API = {
+    getJournalEntries () {
+        return fetch("http://localhost:3000/entries")
+            .then(response => response.json())
+    }
+}
