@@ -1,6 +1,5 @@
-.then(MyParsedEntries => {
-    MyParsedEntries.forEach(entry => {
-        const entryHTML = makeJournalEntryComponent(MyParsedEntries)
-        appendJournalEntry(entryHTML)
-    })
-})
+
+const addEntriestoDOM = entry => {
+    const listEl = document.querySelector("#container")
+    listEl.innerHTML += entry
+}

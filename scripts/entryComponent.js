@@ -1,10 +1,10 @@
-const makeJournalEntryComponent = (daily) => {
+const makeJournalEntryComponent = pastEntry => { 
     return `
         <div id="entry">
-            <h4>${daily.date}</h4>
-            <h3>${daily.concept}</h3>
-            <p>${daily.entry}</p>
-            <p>${daily.mood}<p>
+            <h4>${pastEntry.date}</h4>
+            <h3>${pastEntry.concept}</h3>
+            <p>${pastEntry.entry}</p>
+            <p>${pastEntry.mood}<p>
         </div>
     `
 }

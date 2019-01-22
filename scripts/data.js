@@ -1,3 +1,4 @@
+
 const API = {
     getJournalEntries () {
         return fetch("http://localhost:3000/entries")
