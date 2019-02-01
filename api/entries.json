@@ -1,10 +1,32 @@
 {
-    "entries": [
-        {   
-            "concept": "Learning API and Fetch",
-            "date": "01/21/2018",
-            "entry": "Started the class with several lightning exercises to focus on iterating. Moved onto API work throughout the day. Finished with work on Daily Journal.",
-            "mood": "Stressed"
-        }
-    ]
+  "entries": [
+    {
+      "id": 1,
+      "concept": "Learning API and Fetch",
+      "date": "01/21/2018",
+      "entry": "Started the class with several lightning exercises to focus on iterating. Moved onto API work throughout the day. Finished with work on Daily Journal.",
+      "mood": "Stressed"
+    },
+    {
+      "journaldate": "",
+      "jconcept": "test",
+      "jentry": "",
+      "jmood": "excited",
+      "id": 2
+    },
+    {
+      "journaldate": "",
+      "jconcept": "learning with jenna",
+      "jentry": "trying to get my post element to work so now i'm typing to meet a minimum character limit",
+      "jmood": "excited",
+      "id": 3
+    },
+    {
+      "journaldate": "2019-02-01",
+      "jconcept": "Testing ",
+      "jentry": "Testing Testing Testing Testing Testing Testing Testing ",
+      "jmood": "anxious",
+      "id": 4
+    }
+  ]
 }
