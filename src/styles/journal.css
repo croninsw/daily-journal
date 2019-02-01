@@ -8,7 +8,8 @@ ul {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #1985A1;
+    /* background-color: #1985A1; */
+    background-color: #026C7C;
     width: 100%;
   }
     
@@ -27,7 +28,27 @@ position: sticky;
 
 /* Change the link color to #111 (black) on hover */
 li a:hover {
-background-color: #111;
+background-color: #B81365;
 }
 
 /* https://coolors.co/ebebec-c5c3c6-46494c-4c5c68-1985a1 */
+
+/* FORM STYLINGS */
+
+#conceptsCovered:invalid {
+    border: 2px solid #B81365;
+}
+
+#journalEntry:invalid {
+    border: 2px solid #B81365;
+}
+
+#conceptsCovered:valid {
+    border: 1px solid black;
+}
+
+#journalEntry:valid {
+    border: 1px solid black;
+}
+
+
