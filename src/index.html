@@ -10,6 +10,7 @@
     <title>Daily NSS Journal</title>
 </head>
 ....
+
 <body>
     <header>
         <nav>
@@ -27,34 +28,32 @@
         <form action="">
 
             <label for="">Date of entry</label>
-            <input type="date" name="journalDate" id="journalDate">
+            <input type="date" name="journalDate" id="journalDate" required>
 
         </form>
         <h1 class="formHeader">Concepts Covered</h1>
         <form action="">
-            
+
             <label for="">Concepts Covered</label>
-            <input type="text" name="conceptsCovered" id="conceptsCovered">
+            <input type="text" name="conceptsCovered" id="conceptsCovered" required maxlength="40" pattern="[a-zA-Z0-9' '(){}:;]{6,25}">
 
         </form>
         <h1 class="formHeader">Journal Entry</h1>
         <form action="">
 
             <label for="">Journal Entry</label>
-            <input type="text" name="journalEntry" id="journalEntry">
+            <input type="text" name="journalEntry" id="journalEntry" required minlength="50">
 
         </form>
         <h1 class="formHeader">Mood</h1>
         <form action="">
-
             <label for="">Mood</label>
-            <select name="journalMood" id="journalMood">
+            <select name="journalMood" id="journalMood" required>
                 <option value="excited">Excited</option>
                 <option value="anxious">Anxious</option>
                 <option value="neutral">Neutral</option>
                 <option value="stressed">Stressed</option>
             </select>
-
         </form>
     </div>
     <div class="formButton">
