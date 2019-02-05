@@ -14,11 +14,11 @@ $("#journalButton").addEventListener("click", () => {
     const mood = $("#journalMood").value
 
     const newJournalEntry = {
-            journaldate: date,
-            jconcept: concepts,
-            jentry: entry,
-            jmood: mood
-        }
+        journaldate: date,
+        jconcept: concepts,
+        jentry: entry,
+        jmood: mood
+    }
 
     API.saveJournalEntry(newJournalEntry)
 })
@@ -26,11 +26,19 @@ $("#journalButton").addEventListener("click", () => {
 // post.then(get).then(render)
 
 const radioButton = document.getElementsByName("mood")
+
 radioButton.forEach(button => {
+
     button.addEventListener("click", event => {
         const mood = event.target.value
-    
-        console.log(mood)
+        API
+            .getJournalEntries()
+            .then(parseJson => parseJson
+                .filter(entry => entry.jmood === mood))
+                
+        addEntriestoDOM(mood)
+        
     })
 })
+
 
