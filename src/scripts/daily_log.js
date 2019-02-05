@@ -7,3 +7,4 @@ journalButton.addEventListener('click', (daily) => {
 
 
 const appendJournalEntry = (entry) => document.querySelector("#container").innerHTML += entry
+

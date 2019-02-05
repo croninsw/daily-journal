@@ -1,3 +1,5 @@
+const $ = document.querySelector.bind(document)
+
 API.getJournalEntries().then(entryArray => {
     entryArray.forEach(pastEntry => {
         const html = makeJournalEntryComponent(pastEntry)
@@ -5,11 +7,11 @@ API.getJournalEntries().then(entryArray => {
     });
 })
 
-document.querySelector("#journalButton").addEventListener("click", () => {
-    const date = document.querySelector("#journalDate").value
-    const concepts = document.querySelector("#conceptsCovered").value
-    const entry = document.querySelector("#journalEntry").value
-    const mood = document.querySelector("#journalMood").value
+$("#journalButton").addEventListener("click", () => {
+    const date = $("#journalDate").value
+    const concepts = $("#conceptsCovered").value
+    const entry = $("#journalEntry").value
+    const mood = $("#journalMood").value
 
     const newJournalEntry = {
             journaldate: date,
@@ -22,3 +24,13 @@ document.querySelector("#journalButton").addEventListener("click", () => {
 })
 
 // post.then(get).then(render)
+
+const radioButton = document.getElementsByName("mood")
+radioButton.forEach(button => {
+    button.addEventListener("click", event => {
+        const mood = event.target.value
+    
+        console.log(mood)
+    })
+})
+
