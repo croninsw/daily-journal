@@ -25,20 +25,14 @@ $("#journalButton").addEventListener("click", () => {
 
 // post.then(get).then(render)
 
-const radioButton = document.getElementsByName("mood")
 
-radioButton.forEach(button => {
-
-    button.addEventListener("click", event => {
+$("#moodRadioButtons").addEventListener("click", event => {
         const mood = event.target.value
         API
             .getJournalEntries()
-            .then(parseJson => parseJson
-                .filter(entry => entry.jmood === mood))
-                
-        addEntriestoDOM(mood)
-        
+            .then(parseJson => {
+                let filter = parseJson.filter(entry => entry.jmood === mood)
+                addEntriestoDOM()
+            }
+        )
     })
-})
-
-
