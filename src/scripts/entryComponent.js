@@ -1,10 +1,10 @@
-const makeJournalEntryComponent = pastEntry => { 
+const makeJournalEntryComponent = entry => { 
     return `
         <div id="entry">
-            <h4>${pastEntry.journaldate}</h4>
-            <h3>${pastEntry.jconcept}</h3>
-            <p>${pastEntry.jentry}</p>
-            <p>${pastEntry.jmood}<p>
+            <h4>${entry.journaldate}</h4>
+            <h3>${entry.concept}</h3>
+            <p>${entry.entry}</p>
+            <p>${entry.mood}<p>
         </div>
     `
 }

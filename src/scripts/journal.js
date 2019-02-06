@@ -15,23 +15,20 @@ $("#journalButton").addEventListener("click", () => {
 
     const newJournalEntry = {
         journaldate: date,
-        jconcept: concepts,
-        jentry: entry,
-        jmood: mood
+        concept: concepts,
+        entry: entry,
+        mood: mood
     }
 
     API.saveJournalEntry(newJournalEntry)
 })
-
-// post.then(get).then(render)
-
 
 $("#moodRadioButtons").addEventListener("click", event => {
         const mood = event.target.value
         API
             .getJournalEntries()
             .then(parseJson => {
-                let filter = parseJson.filter(entry => entry.jmood === mood)
+                let filter = parseJson.filter(entry => entry.mood === mood)
                 addEntriestoDOM()
             }
         )
