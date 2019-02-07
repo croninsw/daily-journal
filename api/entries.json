@@ -27,6 +27,13 @@
       "jentry": "Testing Testing Testing Testing Testing Testing Testing ",
       "jmood": "anxious",
       "id": 4
+    },
+    {
+      "journaldate": "2019-02-07",
+      "jconcept": "Browserify",
+      "jentry": "Went over Browserify in the morning and covered set up as well as...breakdown. Well, I broke down my code after the fact. Spent the rest of the day working on exercise to build app for personal contacts. Actually finished relatively quickly. Feeling good about it!",
+      "jmood": "excited",
+      "id": 5
     }
   ]
 }
