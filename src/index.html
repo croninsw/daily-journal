@@ -50,7 +50,7 @@
             <label for="">Mood</label>
             <select name="journalMood" id="journalMood" required>
                 <option value="excited">Excited</option>
-                <option value="anxious">Anxious</option>
+                <option value="anxious">Anxious</option> 
                 <option value="neutral">Neutral</option>
                 <option value="stressed">Stressed</option>
             </select>
@@ -59,10 +59,23 @@
     <div class="formButton">
         <button type="button" name="formButton" id="journalButton">Record Journal Entry</button>
     </div>
+    <section>
+        <fieldset id="moodRadioButtons">
+            <legend>
+                <input type="radio" id="moodChoice1" name="mood" value="excited">
+                <label for="moodChoice1">Excited</label>
+                <input type="radio" id="moodChoice2" name="mood" value="anxious">
+                <label for="moodChoice2">Anxious</label>
+                <input type="radio" id="moodChoice3" name="mood" value="neutral">
+                <label for="moodChoice3">Neutral</label>
+                <input type="radio" id="moodChoice4" name="mood" value="stressed">
+                <label for="moodChoice4">Stressed</label>
+            </legend>
+        </fieldset>
+    </section>
 
     <div>
         <article id="container"></article>
-
     </div>
     <script src="./scripts/data.js"></script>
     <script src="./scripts/entryComponent.js"></script>
