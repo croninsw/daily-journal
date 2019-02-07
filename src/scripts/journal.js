@@ -1,24 +1,38 @@
-API.getJournalEntries().then(entryArray => {
-    entryArray.forEach(pastEntry => {
-        const html = makeJournalEntryComponent(pastEntry)
-        addEntriestoDOM(html)
-    });
-})
+const $ = document.querySelector.bind(document)
 
-document.querySelector("#journalButton").addEventListener("click", () => {
-    const date = document.querySelector("#journalDate").value
-    const concepts = document.querySelector("#conceptsCovered").value
-    const entry = document.querySelector("#journalEntry").value
-    const mood = document.querySelector("#journalMood").value
+const renderEntries = (mood) => {
+    API.getJournalEntries().then(entryArray => {
+        let filterMood = entryArray.filter(entry => entry.mood === mood)
+        filterMood.forEach(entry => {
+                const html = makeJournalEntryComponent(entry)
+                addEntriestoDOM(html)
+            }
+    )
+})
+}
+
+//     renderEntries(filterMood)
+
+$("#journalButton").addEventListener("click", () => {
+    const date = $("#journalDate").value
+    const concepts = $("#conceptsCovered").value
+    const entry = $("#journalEntry").value
+    const mood = $("#journalMood").value
 
     const newJournalEntry = {
-            journaldate: date,
-            jconcept: concepts,
-            jentry: entry,
-            jmood: mood
-        }
+        journaldate: date,
+        concept: concepts,
+        entry: entry,
+        mood: mood
+    }
 
     API.saveJournalEntry(newJournalEntry)
 })
 
-// post.then(get).then(render)
+$("#moodRadioButtons").addEventListener("click", event => {
+        const mood = event.target.value
+        document.querySelector("#container").innerHTML = ""
+        renderEntries(mood)
+
+            }
+        )
