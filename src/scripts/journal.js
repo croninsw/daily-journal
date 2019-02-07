@@ -1,11 +1,17 @@
 const $ = document.querySelector.bind(document)
 
-API.getJournalEntries().then(entryArray => {
-    entryArray.forEach(pastEntry => {
-        const html = makeJournalEntryComponent(pastEntry)
-        addEntriestoDOM(html)
-    });
+const renderEntries = (mood) => {
+    API.getJournalEntries().then(entryArray => {
+        let filterMood = entryArray.filter(entry => entry.mood === mood)
+        filterMood.forEach(entry => {
+                const html = makeJournalEntryComponent(entry)
+                addEntriestoDOM(html)
+            }
+    )
 })
+}
+
+//     renderEntries(filterMood)
 
 $("#journalButton").addEventListener("click", () => {
     const date = $("#journalDate").value
@@ -25,11 +31,8 @@ $("#journalButton").addEventListener("click", () => {
 
 $("#moodRadioButtons").addEventListener("click", event => {
         const mood = event.target.value
-        API
-            .getJournalEntries()
-            .then(parseJson => {
-                let filter = parseJson.filter(entry => entry.mood === mood)
-                addEntriestoDOM()
+        document.querySelector("#container").innerHTML = ""
+        renderEntries(mood)
+
             }
         )
-    })

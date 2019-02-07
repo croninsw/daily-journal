@@ -8,32 +8,11 @@
       "mood": "Stressed"
     },
     {
-      "journaldate": "",
-      "jconcept": "test",
-      "jentry": "",
-      "jmood": "excited",
+      "journaldate": "2019-02-06",
+      "concept": "Filter Method",
+      "entry": "Added radio buttons and worked with Brian to attach event listeners to them. The radio buttons should sort all of my entries by their mood key: value. Hope it works!",
+      "mood": "anxious",
       "id": 2
-    },
-    {
-      "journaldate": "",
-      "jconcept": "learning with jenna",
-      "jentry": "trying to get my post element to work so now i'm typing to meet a minimum character limit",
-      "jmood": "excited",
-      "id": 3
-    },
-    {
-      "journaldate": "2019-02-01",
-      "jconcept": "Testing ",
-      "jentry": "Testing Testing Testing Testing Testing Testing Testing ",
-      "jmood": "anxious",
-      "id": 4
-    },
-    {
-      "journaldate": "",
-      "jconcept": "",
-      "jentry": "",
-      "jmood": "excited",
-      "id": 5
     }
   ]
 }
