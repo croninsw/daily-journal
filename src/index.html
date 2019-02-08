@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="./src/css/journal.css">
+    <link rel="stylesheet" href="./css/journal.css">
     <link href="https://fonts.googleapis.com/css?family=Staatliches|Thasadith" rel="stylesheet">
     <title>Daily NSS Journal</title>
 </head>
@@ -60,6 +60,17 @@
     <div class="formButton">
         <button type="button" name="formButton" id="journalButton">Record Journal Entry</button>
     </div>
+    <section id="#moodRadioButtons">
+        <fieldset>
+            <legend>Please select one of the following moods</legend>
+            <input type="radio" name="action" id="allMoods" value="track" /><label for="track">All Moods</label><br />
+            <input type="radio" name="action" id="excitedMood" value="mood" /><label for="event">Excited</label><br />
+            <input type="radio" name="action" id="anxiousMood" value="mood" /><label for="message">Anxious</label><br />
+            <input type="radio" name="action" id="neutralMood" value="mood" /><label for="message">Neutral</label><br />
+            <input type="radio" name="action" id="stressedMood" value="mood" /><label
+                for="message">Stressed</label><br />
+        </fieldset>
+    </section>
 
     <div>
         <article id="container"></article>

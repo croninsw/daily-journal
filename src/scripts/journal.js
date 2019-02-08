@@ -1,4 +1,3 @@
-const $ = document.querySelector.bind(document)
 
 const renderEntries = (mood) => {
     API.getJournalEntries().then(entryArray => {
@@ -11,11 +10,11 @@ const renderEntries = (mood) => {
     })
 }
 
-$("#journalButton").addEventListener("click", () => {
-    const date = $("#journalDate").value
-    const concepts = $("#conceptsCovered").value
-    const entry = $("#journalEntry").value
-    const mood = $("#journalMood").value
+document.querySelector("#journalButton").addEventListener("click", () => {
+    const date = document.querySelector("#journalDate").value
+    const concepts = document.querySelector("#conceptsCovered").value
+    const entry = document.querySelector("#journalEntry").value
+    const mood = document.querySelector("#journalMood").value
 
     const newJournalEntry = {
         journaldate: date,
@@ -27,7 +26,7 @@ $("#journalButton").addEventListener("click", () => {
     API.saveJournalEntry(newJournalEntry)
 })
 
-$("#moodRadioButtons").addEventListener("click", event => {
+document.querySelector("#moodRadioButtons").addEventListener("click", event => {
     const mood = event.target.value
     document.querySelector("#container").innerHTML = ""
     renderEntries(mood)

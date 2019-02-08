@@ -1,3 +1,2 @@
-const $ = document.querySelector.bind(document)
 
-const addEntriestoDOM = entry => $("#container").innerHTML += entry
+const addEntriestoDOM = entry => document.querySelector("#container").innerHTML += entry
