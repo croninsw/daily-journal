@@ -1,10 +1,10 @@
-const makeJournalEntryComponent = entry => { 
+const makeJournalEntryComponent = entry => {
     return `
         <div id="entry">
-            <h4>${entry.journaldate}</h4>
-            <h3>${entry.concept}</h3>
+            <div>${entry.journaldate}</div>
+            <div>${entry.concept}</div>
             <p>${entry.entry}</p>
-            <p>${entry.mood}<p>
+            <h6>${entry.mood}<h6>
         </div>
     `
 }

@@ -6,37 +6,6 @@
       "date": "01/21/2018",
       "entry": "Started the class with several lightning exercises to focus on iterating. Moved onto API work throughout the day. Finished with work on Daily Journal.",
       "mood": "Stressed"
-    },
-    {
-      "journaldate": "2019-02-06",
-      "concept": "Filter Method",
-      "entry": "Added radio buttons and worked with Brian to attach event listeners to them. The radio buttons should sort all of my entries by their mood key: value. Hope it works!",
-      "mood": "anxious",
-      "id": 2
-<<<<<<< HEAD
-    },
-    {
-      "journaldate": "",
-      "jconcept": "learning with jenna",
-      "jentry": "trying to get my post element to work so now i'm typing to meet a minimum character limit",
-      "jmood": "excited",
-      "id": 3
-    },
-    {
-      "journaldate": "2019-02-01",
-      "jconcept": "Testing ",
-      "jentry": "Testing Testing Testing Testing Testing Testing Testing ",
-      "jmood": "anxious",
-      "id": 4
-    },
-    {
-      "journaldate": "2019-02-07",
-      "jconcept": "Browserify",
-      "jentry": "Went over Browserify in the morning and covered set up as well as...breakdown. Well, I broke down my code after the fact. Spent the rest of the day working on exercise to build app for personal contacts. Actually finished relatively quickly. Feeling good about it!",
-      "jmood": "excited",
-      "id": 5
-=======
->>>>>>> c49360c28c65598de30268f9770bd6851e0f8178
     }
   ]
 }
