@@ -5,77 +5,73 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="./styles/journal.css">
+    <link rel="stylesheet" href="./src/css/journal.css">
     <link href="https://fonts.googleapis.com/css?family=Staatliches|Thasadith" rel="stylesheet">
     <title>Daily NSS Journal</title>
 </head>
-....
 
 <body>
     <header>
         <nav>
             <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#news">News</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <li style="float:right"><a class="active" href="#about">About</a></li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Archive</a></li>
             </ul>
         </nav>
+
+        <div class="hero-image">
+            <img src="./img/sam.jpg" alt="">
+                <div class="hero-text">
+                  <h1>I am Sam Cronin</h1>
+                  <p>And I'm a Developer</p>
+                </div>
+              </div>
     </header>
 
     <div class="form">
         <h1 class="formHeader">Daily Journal</h1>
         <form action="">
-
-            <label for="">Date of entry</label>
-            <input type="date" name="journalDate" id="journalDate" required>
-
+            <fieldset>
+                <label for="">Date of entry</label>
+                <input type="date" name="journalDate" id="journalDate">
+            </fieldset>
         </form>
         <h1 class="formHeader">Concepts Covered</h1>
         <form action="">
-
-            <label for="">Concepts Covered</label>
-            <input type="text" name="conceptsCovered" id="conceptsCovered" required maxlength="40" pattern="[a-zA-Z0-9' '(){}:;]{6,25}">
-
+            <fieldset>
+                <label for="">Concepts Covered</label>
+                <input type="text" name="conceptsCovered" id="conceptsCovered">
+            </fieldset>
         </form>
         <h1 class="formHeader">Journal Entry</h1>
         <form action="">
-
-            <label for="">Journal Entry</label>
-            <input type="text" name="journalEntry" id="journalEntry" required minlength="50">
-
+            <fieldset>
+                <label for="">Journal Entry</label>
+                <input type="text" name="journalEntry" id="journalEntry">
+            </fieldset>
         </form>
         <h1 class="formHeader">Mood</h1>
         <form action="">
-            <label for="">Mood</label>
-            <select name="journalMood" id="journalMood" required>
-                <option value="excited">Excited</option>
-                <option value="anxious">Anxious</option> 
-                <option value="neutral">Neutral</option>
-                <option value="stressed">Stressed</option>
-            </select>
+            <fieldset>
+                <label for="">Mood</label>
+                <select name="journalMood" id="journalMood">
+                    <option value="excited">Excited</option>
+                    <option value="anxious">Anxious</option>
+                    <option value="neutral">Neutral</option>
+                    <option value="stressed">Stressed</option>
+                </select>
+            </fieldset>
         </form>
     </div>
     <div class="formButton">
         <button type="button" name="formButton" id="journalButton">Record Journal Entry</button>
     </div>
-    <section>
-        <fieldset id="moodRadioButtons">
-            <legend>
-                <input type="radio" id="moodChoice1" name="mood" value="excited">
-                <label for="moodChoice1">Excited</label>
-                <input type="radio" id="moodChoice2" name="mood" value="anxious">
-                <label for="moodChoice2">Anxious</label>
-                <input type="radio" id="moodChoice3" name="mood" value="neutral">
-                <label for="moodChoice3">Neutral</label>
-                <input type="radio" id="moodChoice4" name="mood" value="stressed">
-                <label for="moodChoice4">Stressed</label>
-            </legend>
-        </fieldset>
-    </section>
 
     <div>
         <article id="container"></article>
+
     </div>
     <script src="./scripts/data.js"></script>
     <script src="./scripts/entryComponent.js"></script>
