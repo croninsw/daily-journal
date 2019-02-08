@@ -1,11 +1,3 @@
-// const dailyJournal = [
-//     {
-//         date: "",
-//         concept: "",
-//         entry: "",
-//         mood: "",
-//     }
-// ]
 
 const journalButton = document.querySelector("#journalButton")
 
