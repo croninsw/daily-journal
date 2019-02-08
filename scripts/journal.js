@@ -1,4 +1,3 @@
-// objectWithGetterMethod.methodToGetData().then(functionThatRendersData)
 
 API.getJournalEntries().then(entryArray => {
     entryArray.forEach(pastEntry => {

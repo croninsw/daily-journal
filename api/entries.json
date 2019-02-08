@@ -13,7 +13,6 @@
       "entry": "Added radio buttons and worked with Brian to attach event listeners to them. The radio buttons should sort all of my entries by their mood key: value. Hope it works!",
       "mood": "anxious",
       "id": 2
-<<<<<<< HEAD
     },
     {
       "journaldate": "",
@@ -35,8 +34,6 @@
       "jentry": "Went over Browserify in the morning and covered set up as well as...breakdown. Well, I broke down my code after the fact. Spent the rest of the day working on exercise to build app for personal contacts. Actually finished relatively quickly. Feeling good about it!",
       "jmood": "excited",
       "id": 5
-=======
->>>>>>> c49360c28c65598de30268f9770bd6851e0f8178
     }
   ]
 }
