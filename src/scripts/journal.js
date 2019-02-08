@@ -27,8 +27,11 @@ document.querySelector("#journalButton").addEventListener("click", () => {
 })
 
 document.querySelector("#moodRadioButtons").addEventListener("click", event => {
+    if (event.target.type === "radio") {
     const mood = event.target.value
+    console.log(mood)
     document.querySelector("#container").innerHTML = ""
     renderEntries(mood)
+    }
 }
 )
