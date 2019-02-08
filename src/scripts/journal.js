@@ -11,14 +11,14 @@ const renderEntries = (mood) => {
 }
 
 document.querySelector("#journalButton").addEventListener("click", () => {
+    const concept = document.querySelector("#conceptsCovered").value
     const date = document.querySelector("#journalDate").value
-    const concepts = document.querySelector("#conceptsCovered").value
     const entry = document.querySelector("#journalEntry").value
     const mood = document.querySelector("#journalMood").value
 
     const newJournalEntry = {
-        journaldate: date,
-        concept: concepts,
+        concept: concept,
+        date: date,
         entry: entry,
         mood: mood
     }
@@ -27,8 +27,11 @@ document.querySelector("#journalButton").addEventListener("click", () => {
 })
 
 document.querySelector("#moodRadioButtons").addEventListener("click", event => {
-    const mood = event.target.value
-    document.querySelector("#container").innerHTML = ""
-    renderEntries(mood)
+    if (event.target.type === "radio") {
+        const mood = event.target.value
+        document.querySelector("#container").innerHTML = ""
+        renderEntries(mood)
+    }
 }
 )
+

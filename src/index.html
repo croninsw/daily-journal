@@ -60,22 +60,27 @@
     <div class="formButton">
         <button type="button" name="formButton" id="journalButton">Record Journal Entry</button>
     </div>
-    <section id="#moodRadioButtons">
+
+    <section id="moodRadioButtons">
         <fieldset>
             <legend>Please select one of the following moods</legend>
-            <input type="radio" name="action" id="allMoods" value="track" /><label for="track">All Moods</label><br />
-            <input type="radio" name="action" id="excitedMood" value="mood" /><label for="event">Excited</label><br />
-            <input type="radio" name="action" id="anxiousMood" value="mood" /><label for="message">Anxious</label><br />
-            <input type="radio" name="action" id="neutralMood" value="mood" /><label for="message">Neutral</label><br />
-            <input type="radio" name="action" id="stressedMood" value="mood" /><label
+            <input type="radio" name="action" id="allMoods" value="All Moods" /><label for="allMoods">All
+                Moods</label><br />
+            <input type="radio" name="action" id="excitedMood" value="Excited" /><label
+                for="event">Excited</label><br />
+            <input type="radio" name="action" id="anxiousMood" value="Anxious" /><label
+                for="message">Anxious</label><br />
+            <input type="radio" name="action" id="neutralMood" value="Neutral" /><label
+                for="message">Neutral</label><br />
+            <input type="radio" name="action" id="stressedMood" value="Stressed" /><label
                 for="message">Stressed</label><br />
         </fieldset>
     </section>
 
-    <div>
-        <article id="container"></article>
+    <section>
+        <div id="container"></div>
+    </section>
 
-    </div>
     <script src="./scripts/data.js"></script>
     <script src="./scripts/entryComponent.js"></script>
     <script src="./scripts/entriesDOM.js"></script>

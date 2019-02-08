@@ -6,6 +6,27 @@
       "date": "01/21/2018",
       "entry": "Started the class with several lightning exercises to focus on iterating. Moved onto API work throughout the day. Finished with work on Daily Journal.",
       "mood": "Stressed"
+    },
+    {
+      "concept": "Filter Method",
+      "date": "2019-02-06",
+      "entry": "Added radio buttons and worked with Brian to attach event listeners to them. The radio buttons should sort all of my entries by their mood key: value. Hope it works!",
+      "mood": "anxious",
+      "id": 2
+    },
+    {
+      "concept": "POST in Fetch",
+      "date": "2019-02-07",
+      "entry": "Trying to get my POST element to work and I need to mess around with fetch calls a little more if I'm going to get this to work.",
+      "mood": "excited",
+      "id": 3
+    },
+    {
+      "concept": "Browserify",
+      "date": "2019-02-08",
+      "entry": "Went over Browserify in the morning and covered set up as well as...breakdown. Well, I broke down my code after the fact. Spent the rest of the day working on exercise to build app for personal contacts. Actually finished relatively quickly. Feeling good about it!",
+      "mood": "excited",
+      "id": 4
     }
   ]
 }
