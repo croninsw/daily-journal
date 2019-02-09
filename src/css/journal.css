@@ -3,15 +3,37 @@ body {
     color: #46494C;
     margin: 0;
     padding: 0;
-
 }
 
-.grid {
-    display: grid;
-    grid-template-columns: 150px auto 150px;
-    grid-template-rows: repeat(3, 100px);
-    grid-gap: 1em;
-  }
+header {
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    display: flex;
+    align-content: space-around;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #B81365;
+    margin: 1em 0;
+    padding: 0;
+}
+
+fieldset {
+    border-color: #026C7C;
+}
+
+
+main {
+    margin: 0;
+    padding-left: 120px;
+    padding-right: 120px;
+}
 
 ul {
     list-style-type: none;
@@ -25,6 +47,7 @@ ul {
 
 li {
     float: left;
+    padding-left: 70px;
 }
 
 li a {
@@ -34,6 +57,8 @@ text-align: center;
 padding: 14px 16px;
 text-decoration: none;
 position: sticky;
+padding-left: 50px;
+padding-right: 50px;
 }
 
 /* Change the link color to #111 (black) on hover */
@@ -59,4 +84,8 @@ background-color: #B81365;
 
 #journalEntry:valid {
     border: 1px solid black;
+}
+
+.textarea {
+    display: flex;
 }

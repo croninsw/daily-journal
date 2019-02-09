@@ -1,7 +1,8 @@
 
 const renderEntries = (mood) => {
     API.getJournalEntries().then(entryArray => {
-        let filterMood = entryArray.filter(entry => entry.mood === mood)
+        let filterMood =
+        entryArray.filter(entry => entry.mood === mood)
         filterMood.forEach(entry => {
             const html = makeJournalEntryComponent(entry)
             addEntriestoDOM(html)
@@ -27,11 +28,14 @@ document.querySelector("#journalButton").addEventListener("click", () => {
 })
 
 document.querySelector("#moodRadioButtons").addEventListener("click", event => {
+    const mood = event.target.value
     if (event.target.type === "radio") {
-        const mood = event.target.value
         document.querySelector("#container").innerHTML = ""
-        renderEntries(mood)
+        if (event.target.value === mood) {
+            renderEntries(mood)
+        } else if (event.target.value === allMoods) {
+            renderEntries()
+        }
     }
 }
 )
-
