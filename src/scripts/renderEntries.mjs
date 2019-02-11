@@ -1,4 +1,6 @@
-import API from "./data.js"
+import API from "./data.mjs"
+import makeJournalEntryComponent from "./entryComponent.mjs"
+import addEntriestoDOM from "./entriesDOM.mjs"
 
 const renderEntries = (mood) => {
     API.getJournalEntries()
