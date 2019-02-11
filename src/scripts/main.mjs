@@ -1,15 +1,8 @@
+import renderEntries from "./renderEntries.mjs"
+import API from "./data.mjs"
 
-const renderEntries = (mood) => {
-    API.getJournalEntries().then(entryArray => {
-        let filterMood =
-        entryArray.filter(entry => entry.mood === mood)
-        filterMood.forEach(entry => {
-            const html = makeJournalEntryComponent(entry)
-            addEntriestoDOM(html)
-        }
-        )
-    })
-}
+renderEntries()
+// refactor to only have callbacks and addEventListener function on main.js
 
 document.querySelector("#journalButton").addEventListener("click", () => {
     const concept = document.querySelector("#conceptsCovered").value
