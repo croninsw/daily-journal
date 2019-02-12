@@ -21,6 +21,8 @@
             </ul>
         </nav>
     </header>
+    <aside id="leftAside"></aside>
+    <aside id="rightAside"></aside>
     <main>
         <div class="form">
             <h1 class="formHeader">Daily Journal</h1>
@@ -49,7 +51,7 @@
             </form>
             <h1 class="formHeader">Mood</h1>
             <hr>
-            <form action="">
+            <form action="" id="lowerForm">
                 <fieldset class="textarea">
                     <label for="">Mood</label>
                     <select name="journalMood" id="journalMood">
@@ -58,6 +60,10 @@
                         <option value="Neutral">Neutral</option>
                         <option value="Stressed">Stressed</option>
                     </select>
+                </fieldset>
+                <fieldset class="textarea">
+                    <label for="">Search the journal</label>
+                    <input type="text" name="search" id="journalSearch">
                 </fieldset>
             </form>
         </div>

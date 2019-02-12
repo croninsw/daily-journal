@@ -1,34 +1,22 @@
-import renderEntries from "./renderEntries.mjs"
+import renderByMood from "./renderByMood.mjs"
+import checkMood from "./checkMood.mjs"
 import API from "./data.mjs"
+import saveJournalEntries from "./saveJournalEntries.mjs"
+import renderBySearch from "./renderBySearch.mjs";
 
-renderEntries()
-// refactor to only have callbacks and addEventListener function on main.js
-
-document.querySelector("#journalButton").addEventListener("click", () => {
-    const concept = document.querySelector("#conceptsCovered").value
-    const date = document.querySelector("#journalDate").value
-    const entry = document.querySelector("#journalEntry").value
-    const mood = document.querySelector("#journalMood").value
-
-    const newJournalEntry = {
-        concept: concept,
-        date: date,
-        entry: entry,
-        mood: mood
+// fetch entries from API and filter for mood before displaying all
+renderByMood()
+// function callback on journal button to capture fields and save entry to API
+document.querySelector("#journalButton").addEventListener("click", saveJournalEntries)
+// function callback on radio buttons to check mood and display only that mood
+document.querySelector("#moodRadioButtons").addEventListener("click", checkMood)
+// function callback on search field waiting for keypress to search all entries for specific keywords
+document.querySelector("#journalSearch").addEventListener("keypress", event => {
+    if (event.keyCode === 13) {
+        const userInput = event.target.value
+        document.querySelector("#container").innerHTML = ""
+        renderBySearch(userInput)
     }
-
-    API.saveJournalEntry(newJournalEntry)
 })
 
-document.querySelector("#moodRadioButtons").addEventListener("click", event => {
-    const mood = event.target.value
-    if (event.target.type === "radio") {
-        document.querySelector("#container").innerHTML = ""
-        if (event.target.value === mood) {
-            renderEntries(mood)
-        } else if (event.target.value === allMoods) {
-            renderEntries()
-        }
-    }
-}
-)
+
