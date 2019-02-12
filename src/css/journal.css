@@ -2,8 +2,48 @@ body {
     background-color: #EBEBEC;
     color: #46494C;
     margin: 0;
+    padding-left: 7.5%;
+    padding-right: 7.5%;
+    width: 75%;
+
+}
+
+header {
+    margin: 0;
     padding: 0;
-    
+}
+
+#leftAside {
+    float: left;
+    height: 100%;
+    width: 7.5%;
+    background-color: black;
+}
+
+nav {
+    display: flex;
+    align-content: space-around;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #B81365;
+    margin: 1em 0;
+    padding: 0;
+}
+
+fieldset {
+    border-color: #026C7C;
+    width: 40%;
+}
+
+
+main {
+    margin: 0;
+    padding-left: 120px;
+    padding-right: 120px;
 }
 
 ul {
@@ -15,11 +55,12 @@ ul {
     background-color: #026C7C;
     width: 100%;
   }
-    
+
 li {
     float: left;
+    padding-left: 70px;
 }
-  
+
 li a {
 display: block;
 color: #DCDCDD;
@@ -27,6 +68,8 @@ text-align: center;
 padding: 14px 16px;
 text-decoration: none;
 position: sticky;
+padding-left: 50px;
+padding-right: 50px;
 }
 
 /* Change the link color to #111 (black) on hover */
@@ -36,22 +79,11 @@ background-color: #B81365;
 
 /* https://coolors.co/ebebec-c5c3c6-46494c-4c5c68-1985a1 */
 
-/* FORM STYLINGS */
-
-#conceptsCovered:invalid {
-    border: 2px solid #B81365;
+.textarea {
+    width: 96.5%;
 }
 
-#journalEntry:invalid {
-    border: 2px solid #B81365;
+#lowerForm {
+    display: flex;
+    justify-content: space-evenly;
 }
-
-#conceptsCovered:valid {
-    border: 1px solid black;
-}
-
-#journalEntry:valid {
-    border: 1px solid black;
-}
-
-

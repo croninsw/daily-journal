@@ -6,6 +6,41 @@
       "date": "01/21/2018",
       "entry": "Started the class with several lightning exercises to focus on iterating. Moved onto API work throughout the day. Finished with work on Daily Journal.",
       "mood": "Stressed"
+    },
+    {
+      "concept": "Filter Method",
+      "date": "2019-02-06",
+      "entry": "Added radio buttons and worked with Brian to attach event listeners to them. The radio buttons should sort all of my entries by their mood key: value. Hope it works!",
+      "mood": "Anxious",
+      "id": 2
+    },
+    {
+      "concept": "POST in Fetch",
+      "date": "2019-02-07",
+      "entry": "Trying to get my POST element to work and I need to mess around with fetch calls a little more if I'm going to get this to work.",
+      "mood": "Excited",
+      "id": 3
+    },
+    {
+      "concept": "Browserify",
+      "date": "2019-02-08",
+      "entry": "Went over Browserify in the morning and covered set up as well as...breakdown. Well, I broke down my code after the fact. Spent the rest of the day working on exercise to build app for personal contacts. Actually finished relatively quickly. Feeling good about it!",
+      "mood": "Excited",
+      "id": 4
+    },
+    {
+      "concept": "Friday Lab Day",
+      "date": "2019-02-08",
+      "entry": "Spent the morning watching Jenna live code. I'm spending the afternoon dialing in my daily journal. I'm having a hard time fetching all of my journal entries and I am taking time to fix all of those issues...",
+      "mood": "Neutral",
+      "id": 5
+    },
+    {
+      "concept": "Data Structures",
+      "date": "2019-02-12",
+      "entry": "Learned ERD and data structures today, worked on related exercises and then had time after lunch to pick up slack on other projects. I spent a good part of the afternoon debugging my journal and adding a search function. I feel pretty good about the exercises we did this morning, although there is a jQuery advanced challenge that I still need to flex on.",
+      "mood": "Neutral",
+      "id": 6
     }
   ]
 }
