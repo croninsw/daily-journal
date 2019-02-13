@@ -2,20 +2,18 @@ import API from "./data.mjs"
 import makeJournalEntryComponent from "./entryComponent.mjs"
 import addEntriestoDOM from "./entriesDOM.mjs"
 
-const renderBySearch = (input) => {
+const renderBySearch = input => {
     API.getJournalEntries()
         .then(entryArray => {
-            for (entries of entryArray) {
-                console.table(entries)
-                if (entries.value.includes(input)) {
+            console.table(entryArray)
+            for (entry of entryArray) {
+                if (Object.values(entry).inlcudes(input)) {
                     const html = makeJournalEntryComponent(entry)
                     addEntriestoDOM(html)
+
                 }
             }
-        }
-        )
-}
+        })
+    }
 
-export default renderBySearch
-
-
+    export default renderBySearch

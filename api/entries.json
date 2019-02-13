@@ -41,6 +41,13 @@
       "entry": "Learned ERD and data structures today, worked on related exercises and then had time after lunch to pick up slack on other projects. I spent a good part of the afternoon debugging my journal and adding a search function. I feel pretty good about the exercises we did this morning, although there is a jQuery advanced challenge that I still need to flex on.",
       "mood": "Neutral",
       "id": 6
+    },
+    {
+      "concept": "test",
+      "date": "2019-02-13",
+      "entry": "test",
+      "mood": "Stressed",
+      "id": 7
     }
   ]
 }
