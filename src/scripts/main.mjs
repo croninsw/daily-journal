@@ -4,6 +4,8 @@ import API from "./data.mjs"
 import saveJournalEntries from "./saveJournalEntries.mjs"
 import renderBySearch from "./renderBySearch.mjs";
 
+// !!!!! Need to refactor main to have one event listener and a bunch of if statements? !!!!
+
 // fetch entries from API and filter for mood before displaying all
 renderByMood()
 // function callback on journal button to capture fields and save entry to API
@@ -18,5 +20,18 @@ document.querySelector("#journalSearch").addEventListener("keypress", event => {
         renderBySearch(userInput)
     }
 })
-
+// function declaration on body to listen for delete button
+document.querySelector("body").addEventListener("click", (event) => {
+    if (event.target.id.startsWith("deleteButton")) {
+        let id = parseInt(event.target.id.split("--")[1])
+        return (API.deleteJournalEntry(id))
+        .then(() => {
+            document.querySelector("#container").innerHTML = ""
+            return
+        })
+        // .then(() => {
+        //     return renderByMood()
+        // })
+    }
+})
 

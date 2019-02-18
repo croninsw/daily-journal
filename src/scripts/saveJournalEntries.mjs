@@ -9,7 +9,7 @@ function saveJournalEntries() {
     }
 
 
-    API.saveJournalEntry(newJournalEntry)
+    API.postJournalEntry(newJournalEntry)
 }
 export default saveJournalEntries
 
