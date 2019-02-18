@@ -6,6 +6,13 @@ const makeJournalEntryComponent = entry => {
             <p>${entry.entry}</p>
             <h6>${entry.mood}<h6>
         </div>
+
+        <section>
+        <button id="editButton--${entry.id}">Edit Entry</button>
+        <br>
+        <button id="deleteButton--${entry.id}">Delete Entry</button>
+        <br>
+        </section>
     `
 }
 
