@@ -1,6 +1,7 @@
 import API from "./data.mjs"
 import makeJournalEntryComponent from "./entryComponent.mjs"
 import addEntriestoDOM from "./entriesDOM.mjs"
+import renderByMood from "./renderByMood.mjs"
 
 // const renderBySearch = input => {
 //     API.getJournalEntries()
@@ -29,6 +30,24 @@ const renderBySearch = (input) => {
 
             }
             )
+        })
+}
+
+const renderBySearch = () => {
+    let input = document.querySelector("#journalSearch").value.toLowerCase()
+    let entriesFilteredBySearchInput = renderByMood.filter((object) => {
+        return (object.conceptsCovered)
+    })
+}
+
+function filterEntriesBySearchInput() {
+    return filterEntriesBySelectedMood()
+        .then((entriesFilteredByMood) => {
+            let input = document.querySelector("#searchEntriesInput").value.toLowerCase()
+            let entriesFilteredBySearchInput = entriesFilteredByMood.filter((object) => {
+                return (object.conceptsCovered.toLowerCase().includes(input) || object.textEntry.toLowerCase().includes(input))
+            })
+            return entriesFilteredBySearchInput
         })
 }
 

@@ -27,25 +27,25 @@
         <div class="form">
             <h1 class="formHeader">Daily Journal</h1>
             <hr>
-                <fieldset class="textarea">
-                    <label for="">Date of entry</label>
-                    <input type="date" name="journalDate" id="journalDate">
-                </fieldset>
+            <fieldset class="textarea">
+                <label for="">Date of entry</label>
+                <input type="date" name="journalDate" id="journalDate">
+            </fieldset>
             <h1 class="formHeader">Concepts Covered</h1>
             <hr>
-                <fieldset class="textarea">
-                    <label for="journal">Concepts Covered</label>
-                    <textarea name="journalInput" id="conceptsCovered" rows="5" cols="100%"></textarea>
-                </fieldset>
+            <fieldset class="textarea">
+                <label for="journal">Concepts Covered</label>
+                <textarea name="journalInput" id="conceptsCovered" rows="5" cols="100%"></textarea>
+            </fieldset>
             <h1 class="formHeader">Journal Entry</h1>
             <hr>
-                <fieldset class="textarea">
-                    <label for="journal">Journal Entry</label>
-                    <textarea name="journalInput" id="journalEntry" rows="5" cols="100%"></textarea>
-                </fieldset>
+            <fieldset class="textarea">
+                <label for="journal">Journal Entry</label>
+                <textarea name="journalInput" id="journalEntry" rows="5" cols="100%"></textarea>
+            </fieldset>
             <h1 class="formHeader">Mood</h1>
             <hr>
-            <form action="" id="lowerForm">
+            <div action="" id="lowerForm">
                 <fieldset class="textarea">
                     <label for="">Mood</label>
                     <select name="journalMood" id="journalMood">
@@ -59,30 +59,30 @@
                     <label for="">Search the journal</label>
                     <input type="text" name="search" id="journalSearch">
                 </fieldset>
-        </div>
-        <div class="formButton">
-            <button type="button" name="formButton" id="journalButton">Record Journal Entry</button>
-        </div>
+            </div>
+            <div class="formButton">
+                <button type="button" name="formButton" id="journalButton">Record Journal Entry</button>
+            </div>
 
-        <article id="moodRadioButtons">
-            <fieldset>
-                <legend>Please select one of the following moods</legend>
-                <input type="radio" name="action" id="allMoods" value="All Moods" /><label for="allMoods">All
-                    Moods</label><br />
-                <input type="radio" name="action" id="excitedMood" value="Excited" /><label
-                    for="event">Excited</label><br />
-                <input type="radio" name="action" id="anxiousMood" value="Anxious" /><label
-                    for="message">Anxious</label><br />
-                <input type="radio" name="action" id="neutralMood" value="Neutral" /><label
-                    for="message">Neutral</label><br />
-                <input type="radio" name="action" id="stressedMood" value="Stressed" /><label
-                    for="message">Stressed</label><br />
-            </fieldset>
-        </article>
+            <article id="moodRadioButtons">
+                <fieldset>
+                    <legend>Please select one of the following moods</legend>
+                    <input type="radio" name="action" id="allMoods" value="All Moods" /><label for="allMoods">All
+                        Moods</label><br />
+                    <input type="radio" name="action" id="excitedMood" value="Excited" /><label
+                        for="event">Excited</label><br />
+                    <input type="radio" name="action" id="anxiousMood" value="Anxious" /><label
+                        for="message">Anxious</label><br />
+                    <input type="radio" name="action" id="neutralMood" value="Neutral" /><label
+                        for="message">Neutral</label><br />
+                    <input type="radio" name="action" id="stressedMood" value="Stressed" /><label
+                        for="message">Stressed</label><br />
+                </fieldset>
+            </article>
 
-        <section>
-            <div id="container"></div>
-        </section>
+            <section>
+                <div id="container"></div>
+            </section>
     </main>
     <script src="./scripts/main.mjs" type="module"></script>
 </body>
