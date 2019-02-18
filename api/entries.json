@@ -41,6 +41,27 @@
       "entry": "Learned ERD and data structures today, worked on related exercises and then had time after lunch to pick up slack on other projects. I spent a good part of the afternoon debugging my journal and adding a search function. I feel pretty good about the exercises we did this morning, although there is a jQuery advanced challenge that I still need to flex on.",
       "mood": "Neutral",
       "id": 6
+    },
+    {
+      "concept": "test",
+      "date": "2019-02-13",
+      "entry": "test",
+      "mood": "Stressed",
+      "id": 7
+    },
+    {
+      "concept": "Nutshell Day: 1",
+      "date": "2019-02-13",
+      "entry": "Started the Nutshell project today. My group settled in classroom three and commandeered a white board with on which to fully flesh out our plan of attack. I think our group did a fantastic job laying out the data structure and we all gave each other a good laugh, which was good for keeping us focused. Warner and I played around with CSS ideas and we ended the day with several photos of iterations of the white boarding process to work with tomorrow.",
+      "mood": "Excited",
+      "id": 8
+    },
+    {
+      "concept": "Nutshell Day: 2",
+      "date": "2019-02-14",
+      "entry": "Got an early start to the project this morning and made serious headway in it all throughout. We ended the day with all of the event listeners functioning and firing correctly. Spent the latter half of the afternoon with minor debugging which I think puts us in a good place for tomorrow, especially with it being a short, half-day. Hopefully we can take the leads we established today and apply them to quickly tackle (debug) our code and apply a little CSS to our Nutshell before the weekend. For Day 2 out of maybe 7(?), I think our group is up to something great!",
+      "mood": "Excited",
+      "id": 9
     }
   ]
 }
