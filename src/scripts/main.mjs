@@ -29,9 +29,22 @@ document.querySelector("body").addEventListener("click", (event) => {
             document.querySelector("#container").innerHTML = ""
             return
         })
-        // .then(() => {
-        //     return renderByMood()
-        // })
+        .then(() => {
+            return renderByMood()
+        })
     }
 })
+
+// if (event.target.id.startsWith("editButton")) {
+//     let id = parseInt(event.target.id.split("--")[1])
+//     return (API.putJournalEntry(id))
+//     .then(() => {
+//         document.querySelector("#save_button").textContent = "Update"
+//         document.querySelector("#container").innerHTML = ""
+//         return
+//     })
+//     .then(() => {
+//         return renderByMood()
+//     })
+// }
 
